@@ -33,10 +33,7 @@ public class SeleniumTest {
             loginPage.enterPassword("123456789"); // Replace with a valid password
             loginPage.clickLoginButton();
             
-            //String expectedUrl = "";
-            //String actualUrl = driver.getCurrentUrl();
-            //Assert.assetEqual(expectedUrl, actualUrl);
-            //Assert.assertTrue(driver.findElement(By.id("element_id")).isDisplayed());
+         
             boolean isLogoutDisplayed = driver.findElement(By.linkText("Logout")).isDisplayed();
             Assert.assertTrue("Logout link should be displayed after successful login", isLogoutDisplayed);
 
